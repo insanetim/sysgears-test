@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Distance Converter</title>
+  </head>
+  <body>
+    <h1>Distance Converter</h1>
+
+    <div>
+      <label>Distance:</label>
+      <input
+        id="distanceValue"
+        type="number"
+        value="1"
+        step="0.1"
+        min="0"
+      />
+      <select id="fromUnit"></select>
+    </div>
+
+    <div style="margin-top: 10px">
+      <label>Convert to:</label>
+      <select id="toUnit"></select>
+    </div>
+
+    <button
+      id="convertBtn"
+      style="margin-top: 10px"
+    >
+      Convert
+    </button>
+
+    <div
+      id="result"
+      style="
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+      "
+    >
+      <h3>Result:</h3>
+      <div id="resultText"></div>
+      <pre id="resultJson"></pre>
+    </div>
+
+    <script src="js/converter.js"></script>
+  </body>
+</html>
